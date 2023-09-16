@@ -222,9 +222,29 @@ section{
     .navlist{
         position: absolute;
         top: 100%;
-        right: 0;
+        right: -100%;
         width: 300px;
         height: 40vh;
-        background: ;
+        background: #4d9559;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 20px;
+        transition: all .55s ease;
+    }
+    .navlist a{
+        margin-left: 0;
+        display: block;
+        margin: 7px 0; 
+    }
+    .navlist.open{
+        right: 0;
+    }
+}
+
+@media (max-width: 680px){
+    .hero-img img{
+         width: 100%;
+         height: auto;
     }
 }
